@@ -1,10 +1,11 @@
 <script lang="ts">
 
+
     let mapLayout = [
-        [true, true, false, false],
-        [true, true, true, false],
-        [false, false, true, true],
-        [true, true, true, false]
+        [false, false, false, false],
+        [false, false, false, false],
+        [false, false, false, false],
+        [false, false, false, false]
     ];
 
     function flipRoomIfExists(row: number, col: number) {
@@ -16,15 +17,15 @@
         }
     }
 
-function roomClick(row: number, col: number) {
+    function roomClick(row: number, col: number) {
 
-    flipRoomIfExists(row, col);
-    flipRoomIfExists(row + 1, col);
-    flipRoomIfExists(row - 1, col);
-    flipRoomIfExists(row, col + 1);
-    flipRoomIfExists(row, col - 1);
+        flipRoomIfExists(row, col);
+        flipRoomIfExists(row + 1, col);
+        flipRoomIfExists(row - 1, col);
+        flipRoomIfExists(row, col + 1);
+        flipRoomIfExists(row, col - 1);
 
-}
+    }
 
 </script>
 
