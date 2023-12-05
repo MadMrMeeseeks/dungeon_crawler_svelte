@@ -187,6 +187,10 @@
         animation: flash 1s infinite;
     }
 
+    body {
+        background-color: grey;
+    }
+
     @keyframes flash {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
